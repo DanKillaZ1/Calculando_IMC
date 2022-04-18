@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        } 
+
+        function calculaImc(altura, peso){
+
+            return peso / (altura * altura);     
+             
+        } 
+        var nome = prompt("Informe o seu nome");
+        var alturaInformada = prompt(nome + ", Informe sua Altura");
+        var pesoInformado = prompt(nome + ", Informe seu peso");
+
+        var imc = calculaImc(alturaInformada, pesoInformado);
+
+        mostra(nome +", o IMC é " + imc);
+
+        if(imc < 18.5){
+            mostra("Voçê está abaixo do recomendado");
+        }
+
+        if(imc > 35){
+            mostra("Você está acima do recomedado");
+        }
+        if(imc >= 18.5 && imc <= 35){
+            mostra("Seu IMC está excelente");
+            }
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        // var ano = 2020;   
+        
+        // mostra("Flavio tem " + (ano - 1977) + " anos");  
+
+        // mostra("Joaquim tem " + (ano - 1996) + " anos");  
+
+        // ano = 2017;        
+        
+        // mostra("Barney tem " + (ano - 1976) + " anos");
+       
+
+        
+
+
+
+        // var idadeFlavio = 39;
+        // var idadeJoquim = 20;
+        // var idadeBarney = 41;
+
+        // var media = (idadeFlavio + idadeJoquim + idadeBarney) /3;
+
+        // document.write("A media de das idades e " + Math.round(media));
+
+        // var nome = "Daniel";
+
+        // document.write("<br>");
+
+        // document.write("A idade de " + nome + " e " + idadeFlavio);
+
+        // var linda = 12;
+        // var guaraciara = 15;
+        // var perola = 13;
+
+        // var totalIdades = linda + guaraciara + perola;
+
+        // document.write("<br>");
+
+        // document.write("A media de idade das filhas do hacker é " + ( totalIdades / 3));
+      
+    </script>
+    
+</body>
+</html>
